@@ -1,0 +1,26 @@
+{
+  "name": "azure-devops-hello-world",
+  "version": "1.0.0",
+  "description": "My first Azure Web App deployment with Azure Dev Ops",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frankcaron/azure-devops-hello-world.git"
+  },
+  "keywords": [
+    "azure"
+  ],
+  "author": "Frank Caron",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frankcaron/azure-devops-hello-world/issues"
+  },
+  "homepage": "https://github.com/frankcaron/azure-devops-hello-world#readme"
+}
