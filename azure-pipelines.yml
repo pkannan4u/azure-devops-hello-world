@@ -1,10 +1,21 @@
 # Node.js Express Web App to Linux on Azure
+- task: AzureRmWebAppDeployment@4
+  inputs:
+    ConnectionType: 'AzureRM'
+    azureSubscription: 'Free Trial(857328a6-f501-4ae4-b917-d7da360e8cc5)'
+    appType: 'webAppLinux'
+    WebAppName: 'node-express-demo-kannan-001'
+    deployToSlotOrASE: true
+    ResourceGroupName: 'webapps-dev-rg'
+    SlotName: 'production'
+    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    RuntimeStack: 'NODE|10.12'
 # Build a Node.js Express app and deploy it to Azure as a Linux web app.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 
 trigger:
-- azure-pipelines-update-sub
+- master
 
 variables:
 
